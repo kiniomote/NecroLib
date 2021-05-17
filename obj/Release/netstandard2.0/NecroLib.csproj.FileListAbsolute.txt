@@ -1,0 +1,9 @@
+D:\Unity\NecroLib\NecroLib\bin\Release\netstandard2.0\NecroLib.deps.json
+D:\Unity\NecroLib\NecroLib\bin\Release\netstandard2.0\NecroLib.dll
+D:\Unity\NecroLib\NecroLib\bin\Release\netstandard2.0\NecroLib.pdb
+D:\Unity\NecroLib\NecroLib\obj\Release\netstandard2.0\NecroLib.AssemblyInfoInputs.cache
+D:\Unity\NecroLib\NecroLib\obj\Release\netstandard2.0\NecroLib.AssemblyInfo.cs
+D:\Unity\NecroLib\NecroLib\obj\Release\netstandard2.0\NecroLib.csproj.CoreCompileInputs.cache
+D:\Unity\NecroLib\NecroLib\obj\Release\netstandard2.0\NecroLib.dll
+D:\Unity\NecroLib\NecroLib\obj\Release\netstandard2.0\NecroLib.pdb
+D:\Unity\NecroLib\NecroLib\obj\Release\netstandard2.0\NecroLib.csprojAssemblyReference.cache
