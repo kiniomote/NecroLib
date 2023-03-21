@@ -27,22 +27,22 @@ namespace NecroLib.Models.Battles
 
         public Battler(ICharacter character)
         {
-            Dictionary<SquadType, ISquad> squads = character.Ownership.Army.Squads;
-            Dictionary<HeroAttribute, IHeroCharacteristic> battleAttributes = character.Characteristics.BattleCharacteristics;
+            FormBattleSquads(character.Ownership.Army.Squads);
+            FormBattleAttributes(character.Characteristics.BattleCharacteristics);
+        }
 
+        private void FormBattleSquads(Dictionary<SquadType, ISquad> squads)
+        {
             BattleSquads = new List<IBattleSquad>();
 
-            foreach (var squad in squads)
-            {
-                BattleSquads.Add(new BattleSquad(squad.Value));
-            }
+            squads.ForEach(squad => BattleSquads.Add(new BattleSquad(squad.Value)));
+        }
 
+        private void FormBattleAttributes(Dictionary<HeroAttribute, IHeroCharacteristic> battleAttributes)
+        {
             BattleAttributes = new Dictionary<HeroAttribute, int>();
 
-            foreach (var attribute in battleAttributes)
-            {
-                BattleAttributes.Add(attribute.Key, attribute.Value.GetValue());
-            }
+            battleAttributes.ForEach(attribute => BattleAttributes.Add(attribute.Key, attribute.Value.GetValue()));
         }
 
         public List<IBattleUnit> GetAliveUnits()
